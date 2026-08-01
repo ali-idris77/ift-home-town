@@ -48,12 +48,30 @@ main{
     min-height: 100vh;
 }
 
-.hero-div{
+.hero{
     background-image: url("Images/Kaduna.webp");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.678);
+}
+
+.hero-div{
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    z-index: 1;
+}
+
+.hero-div h1{
+    font-size: 4rem;
 }
 
 section:not(:first-of-type){
