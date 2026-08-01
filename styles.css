@@ -19,4 +19,34 @@
 body{
     font-family: var(--font-family);
     background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
 }
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Quicksand', sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--secondary-color);
+}
+ul{
+    background-color: var(--secondary-color);
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+li, a{
+    background-color: var(--secondary-color);
+}
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+main{
+    padding: 2rem;
+    min-height: 100vh;
+}
+
