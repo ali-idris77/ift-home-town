@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Quicksand:wght@400;700&display=swap");
+
+:root{
+    --primary-color: #202020;
+    --secondary-color: #2c2c2c;
+    --background-color: #3a3a3a;
+    --accent-color: #61edff;
+    --text-color: #ffffff;
+    --font-family: 'Nunito', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: var(--text-color);
+    background-color: var(--primary-color);
+}
+body{
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+}
