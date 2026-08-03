@@ -132,11 +132,12 @@ nav ul li a.active, nav ul li a:hover{
     gap: 1rem;
 }
 .inner-hero h1{
-    font-size: 3rem;
+    font-size: 4rem;
     color: var(--accent-color);
-
 }
-
+.inner-hero{
+    z-index: 1;
+}
 .inner-hero p, .hero-div h4, .header p{
     font-size: 1.2rem;
 }
@@ -144,6 +145,7 @@ nav ul li a.active, nav ul li a:hover{
 footer{
     text-align: center;
     padding: 2rem;
+    background-color: var(--secondary-color);
 }
 
 /* Home page */
@@ -210,7 +212,9 @@ section.hro, .hero{
     height: 100%;
     object-fit: contain;
 }
-
+.profile-info p{
+   font-size: small; 
+}
 /* Table styles */
 table{
     border-collapse: collapse;
@@ -240,4 +244,104 @@ tbody tr:hover{
 }
 th{
     font-size: large;
+}
+/* Contact */
+form{
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+label{
+    color: var(--accent-color);
+}
+
+.form{
+    width: 100%;
+    display: grid;
+}
+
+.FormItems{
+    display: flex;
+    flex-direction: column;
+}
+
+input, select{
+    background-color: var(--secondary-color);
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 5px;
+    
+}
+/* gallery styles */
+.gallery{
+    display: flex;
+    flex-direction: column;
+}
+.gallery-div{
+    column-count: 3;
+    column-gap: 1rem;
+}
+.img{
+    position: relative;
+    display: inline-block;
+    break-inside: avoid;
+    margin-bottom: 1rem;
+}
+.img img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+.img p{
+    position: absolute;
+    bottom: 0;
+    background-color: #202020bb;
+    z-index: 1;
+    width: 100%;
+    padding: 1rem 0.5rem;
+    text-align: center;
+    opacity: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.img:hover p{
+    opacity: 1;
+    transition: all 0.4s ease-out;
+} 
+
+#test{
+    color: var(--accent-color);
+}
+.test{
+    color: yellow;
+}
+/* bg styles */
+.abt-hero, .glr-hero, .tbl-hero, .frm-hero{
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.abt-hero::after, .glr-hero::after, .tbl-hero::after, .frm-hero::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.678);
+}
+.abt-hero{
+    background-image: url('Images/3777762_Nok\ Village\ \(Nok\ Culture\ Site\)\,\ Kaduna\ State4.jpg');
+}
+.glr-hero{
+    background-image: url('Images/GalaxyMall.jpg');
+}
+.tbl-hero{
+    background-image: url('Images/Kaduna\ \(1\).webp');
+}
+.frm-hero{
+    background-image: url('Images/Kajuru\ castle.jpg');
 }
